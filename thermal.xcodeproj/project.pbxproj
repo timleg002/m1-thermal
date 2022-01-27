@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7BE985826DBD78400BAFCF9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BE985626DBD35F00BAFCF9 /* IOKit.framework */; };
+		C7BE985B26DBD78500BAFCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C3E20126D3EDF000A9A10B /* Foundation.framework */; };
+		C7BE985D26DBD78600BAFCF9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C3E1FD26D3E8B600A9A10B /* CoreServices.framework */; };
+		C7BE985F26DBD78800BAFCF9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C3E1FF26D3EDE700A9A10B /* CoreFoundation.framework */; };
+		C7C3E1FB26D2C65800A9A10B /* CFArray+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3E1FA26D2C65800A9A10B /* CFArray+Sequence.swift */; };
+		C7CA465526CD155200E8DC03 /* thermalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA465426CD155200E8DC03 /* thermalApp.swift */; };
+		C7CA465726CD155200E8DC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA465626CD155200E8DC03 /* ContentView.swift */; };
+		C7CA465926CD155300E8DC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA465826CD155300E8DC03 /* Assets.xcassets */; };
+		C7CA465C26CD155300E8DC03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA465B26CD155300E8DC03 /* Preview Assets.xcassets */; };
+		C7CA466826CD155300E8DC03 /* thermalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA466726CD155300E8DC03 /* thermalTests.swift */; };
+		C7CA467326CD155300E8DC03 /* thermalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA467226CD155300E8DC03 /* thermalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7CA466426CD155300E8DC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CA464926CD155200E8DC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7CA465026CD155200E8DC03;
+			remoteInfo = thermal;
+		};
+		C7CA466F26CD155300E8DC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CA464926CD155200E8DC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7CA465026CD155200E8DC03;
+			remoteInfo = thermal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7BE985626DBD35F00BAFCF9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C7C3E1F926D2401200A9A10B /* thermal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thermal-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7C3E1FA26D2C65800A9A10B /* CFArray+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFArray+Sequence.swift"; sourceTree = "<group>"; };
+		C7C3E1FD26D3E8B600A9A10B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C7C3E1FF26D3EDE700A9A10B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C7C3E20126D3EDF000A9A10B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7CA465126CD155200E8DC03 /* thermal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thermal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CA465426CD155200E8DC03 /* thermalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermalApp.swift; sourceTree = "<group>"; };
+		C7CA465626CD155200E8DC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7CA465826CD155300E8DC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7CA465B26CD155300E8DC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7CA465D26CD155300E8DC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CA465E26CD155300E8DC03 /* thermal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thermal.entitlements; sourceTree = "<group>"; };
+		C7CA466326CD155300E8DC03 /* thermalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CA466726CD155300E8DC03 /* thermalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermalTests.swift; sourceTree = "<group>"; };
+		C7CA466926CD155300E8DC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CA466E26CD155300E8DC03 /* thermalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CA467226CD155300E8DC03 /* thermalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermalUITests.swift; sourceTree = "<group>"; };
+		C7CA467426CD155300E8DC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7CA464E26CD155200E8DC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BE985F26DBD78800BAFCF9 /* CoreFoundation.framework in Frameworks */,
+				C7BE985826DBD78400BAFCF9 /* IOKit.framework in Frameworks */,
+				C7BE985B26DBD78500BAFCF9 /* Foundation.framework in Frameworks */,
+				C7BE985D26DBD78600BAFCF9 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA466026CD155300E8DC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA466B26CD155300E8DC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7C3E1FC26D3E8B600A9A10B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BE985626DBD35F00BAFCF9 /* IOKit.framework */,
+				C7C3E20126D3EDF000A9A10B /* Foundation.framework */,
+				C7C3E1FF26D3EDE700A9A10B /* CoreFoundation.framework */,
+				C7C3E1FD26D3E8B600A9A10B /* CoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7CA464826CD155200E8DC03 = {
+			isa = PBXGroup;
+			children = (
+				C7CA465326CD155200E8DC03 /* thermal */,
+				C7CA466626CD155300E8DC03 /* thermalTests */,
+				C7CA467126CD155300E8DC03 /* thermalUITests */,
+				C7CA465226CD155200E8DC03 /* Products */,
+				C7C3E1FC26D3E8B600A9A10B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7CA465226CD155200E8DC03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA465126CD155200E8DC03 /* thermal.app */,
+				C7CA466326CD155300E8DC03 /* thermalTests.xctest */,
+				C7CA466E26CD155300E8DC03 /* thermalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7CA465326CD155200E8DC03 /* thermal */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA465426CD155200E8DC03 /* thermalApp.swift */,
+				C7C3E1FA26D2C65800A9A10B /* CFArray+Sequence.swift */,
+				C7CA465626CD155200E8DC03 /* ContentView.swift */,
+				C7C3E1F926D2401200A9A10B /* thermal-Bridging-Header.h */,
+				C7CA465826CD155300E8DC03 /* Assets.xcassets */,
+				C7CA465D26CD155300E8DC03 /* Info.plist */,
+				C7CA465E26CD155300E8DC03 /* thermal.entitlements */,
+				C7CA465A26CD155300E8DC03 /* Preview Content */,
+			);
+			path = thermal;
+			sourceTree = "<group>";
+		};
+		C7CA465A26CD155300E8DC03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA465B26CD155300E8DC03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7CA466626CD155300E8DC03 /* thermalTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA466726CD155300E8DC03 /* thermalTests.swift */,
+				C7CA466926CD155300E8DC03 /* Info.plist */,
+			);
+			path = thermalTests;
+			sourceTree = "<group>";
+		};
+		C7CA467126CD155300E8DC03 /* thermalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA467226CD155300E8DC03 /* thermalUITests.swift */,
+				C7CA467426CD155300E8DC03 /* Info.plist */,
+			);
+			path = thermalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7CA465026CD155200E8DC03 /* thermal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CA467726CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermal" */;
+			buildPhases = (
+				C7CA464D26CD155200E8DC03 /* Sources */,
+				C7CA464E26CD155200E8DC03 /* Frameworks */,
+				C7CA464F26CD155200E8DC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thermal;
+			productName = thermal;
+			productReference = C7CA465126CD155200E8DC03 /* thermal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7CA466226CD155300E8DC03 /* thermalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CA467A26CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermalTests" */;
+			buildPhases = (
+				C7CA465F26CD155300E8DC03 /* Sources */,
+				C7CA466026CD155300E8DC03 /* Frameworks */,
+				C7CA466126CD155300E8DC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7CA466526CD155300E8DC03 /* PBXTargetDependency */,
+			);
+			name = thermalTests;
+			productName = thermalTests;
+			productReference = C7CA466326CD155300E8DC03 /* thermalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7CA466D26CD155300E8DC03 /* thermalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CA467D26CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermalUITests" */;
+			buildPhases = (
+				C7CA466A26CD155300E8DC03 /* Sources */,
+				C7CA466B26CD155300E8DC03 /* Frameworks */,
+				C7CA466C26CD155300E8DC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7CA467026CD155300E8DC03 /* PBXTargetDependency */,
+			);
+			name = thermalUITests;
+			productName = thermalUITests;
+			productReference = C7CA466E26CD155300E8DC03 /* thermalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7CA464926CD155200E8DC03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C7CA465026CD155200E8DC03 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C7CA466226CD155300E8DC03 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C7CA465026CD155200E8DC03;
+					};
+					C7CA466D26CD155300E8DC03 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C7CA465026CD155200E8DC03;
+					};
+				};
+			};
+			buildConfigurationList = C7CA464C26CD155200E8DC03 /* Build configuration list for PBXProject "thermal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7CA464826CD155200E8DC03;
+			productRefGroup = C7CA465226CD155200E8DC03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7CA465026CD155200E8DC03 /* thermal */,
+				C7CA466226CD155300E8DC03 /* thermalTests */,
+				C7CA466D26CD155300E8DC03 /* thermalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7CA464F26CD155200E8DC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CA465C26CD155300E8DC03 /* Preview Assets.xcassets in Resources */,
+				C7CA465926CD155300E8DC03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA466126CD155300E8DC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA466C26CD155300E8DC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7CA464D26CD155200E8DC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C3E1FB26D2C65800A9A10B /* CFArray+Sequence.swift in Sources */,
+				C7CA465726CD155200E8DC03 /* ContentView.swift in Sources */,
+				C7CA465526CD155200E8DC03 /* thermalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA465F26CD155300E8DC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CA466826CD155300E8DC03 /* thermalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CA466A26CD155300E8DC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CA467326CD155300E8DC03 /* thermalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7CA466526CD155300E8DC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7CA465026CD155200E8DC03 /* thermal */;
+			targetProxy = C7CA466426CD155300E8DC03 /* PBXContainerItemProxy */;
+		};
+		C7CA467026CD155300E8DC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7CA465026CD155200E8DC03 /* thermal */;
+			targetProxy = C7CA466F26CD155300E8DC03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C7CA467526CD155300E8DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7CA467626CD155300E8DC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C7CA467826CD155300E8DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = thermal/thermal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"thermal/Preview Content\"";
+				DEVELOPMENT_TEAM = D866X438F6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = thermal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "thermal/thermal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7CA467926CD155300E8DC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = thermal/thermal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"thermal/Preview Content\"";
+				DEVELOPMENT_TEAM = D866X438F6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = thermal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "thermal/thermal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C7CA467B26CD155300E8DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D866X438F6;
+				INFOPLIST_FILE = thermalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermal.app/Contents/MacOS/thermal";
+			};
+			name = Debug;
+		};
+		C7CA467C26CD155300E8DC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D866X438F6;
+				INFOPLIST_FILE = thermalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermal.app/Contents/MacOS/thermal";
+			};
+			name = Release;
+		};
+		C7CA467E26CD155300E8DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D866X438F6;
+				INFOPLIST_FILE = thermalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = thermal;
+			};
+			name = Debug;
+		};
+		C7CA467F26CD155300E8DC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D866X438F6;
+				INFOPLIST_FILE = thermalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.timko.thermalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = thermal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7CA464C26CD155200E8DC03 /* Build configuration list for PBXProject "thermal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CA467526CD155300E8DC03 /* Debug */,
+				C7CA467626CD155300E8DC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CA467726CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CA467826CD155300E8DC03 /* Debug */,
+				C7CA467926CD155300E8DC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CA467A26CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CA467B26CD155300E8DC03 /* Debug */,
+				C7CA467C26CD155300E8DC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CA467D26CD155300E8DC03 /* Build configuration list for PBXNativeTarget "thermalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CA467E26CD155300E8DC03 /* Debug */,
+				C7CA467F26CD155300E8DC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7CA464926CD155200E8DC03 /* Project object */;
+}
